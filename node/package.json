@@ -1,0 +1,19 @@
+{
+  "name": "node-user-scripts",
+  "version": "1.0.0",
+  "description": "Node User Scripts",
+  "main": "index.js",
+  "author": "@telematica",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^21.1.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.0",
+    "@types/node": "^18.13.0",
+    "@types/request": "^2.48.8",
+    "jsdoc": "^4.0.0",
+    "typescript": "^4.9.5"
+  }
+}
