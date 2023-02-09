@@ -1,4 +1,9 @@
-const headers = {
+/**
+ * @constant
+ * @type {{[property: string]: any}}
+ * @default
+ */
+const HEADERS = {
   authority: "www.blacked.com",
   method: "GET",
   scheme: "https",
@@ -21,5 +26,5 @@ const headers = {
 };
 
 module.exports = {
-  headers
+  HEADERS
 }

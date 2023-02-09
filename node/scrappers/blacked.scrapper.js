@@ -1,7 +1,7 @@
 // @ts-check
 const request = require("request");
 const jsdom = require("jsdom");
-const { headers } = require("./common.constants");
+const { HEADERS } = require("./common.constants");
 
 /**
  * Scrapper Function
@@ -13,7 +13,7 @@ const scrapBlacked = (url) => {
   return new Promise((resolve, reject) => {
     const options = {
       url,
-      headers,
+      headers: HEADERS,
     };
     request(options, (error, response, body) => {
       if (error) {
