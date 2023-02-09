@@ -4,12 +4,11 @@ const jsdom = require("jsdom");
 const { headers } = require("./common.constants");
 
 /**
- * Scraps blacked.com
- *
- * @param {string} url
- * @returns {Promise<any>}
- *
+ * Scrapper Function
+ * @typedef {(url: string) => Promise<any>} ScrapperType
  */
+
+/** @type { ScrapperType } */
 const scrapBlacked = (url) => {
   return new Promise((resolve, reject) => {
     const options = {
