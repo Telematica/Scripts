@@ -1,17 +1,19 @@
 /**
+ * Blacked.com Headers
+ *
  * @constant
  * @type {{[property: string]: any}}
  * @default
  */
 const HEADERS = {
-  authority: "www.blacked.com",
-  method: "GET",
-  scheme: "https",
   accept:
     "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  authority: "www.blacked.com",
   "accept-language": "en-US,en;q=0.9",
   "cache-control": "max-age=0",
   cookie: process.env.COOKIE,
+  method: "GET",
+  scheme: "https",
   "sec-ch-ua":
     'Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
   "sec-ch-ua-mobile": "?0",
@@ -26,5 +28,5 @@ const HEADERS = {
 };
 
 module.exports = {
-  HEADERS
-}
+  HEADERS,
+};

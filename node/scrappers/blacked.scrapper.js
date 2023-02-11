@@ -3,11 +3,6 @@ const request = require("request");
 const jsdom = require("jsdom");
 const { HEADERS } = require("./common.constants");
 
-/**
- * Scrapper Function
- * @typedef {(url: string) => Promise<any>} ScrapperType
- */
-
 /** @type { ScrapperType } */
 const scrapBlacked = (url) => {
   return new Promise((resolve, reject) => {
@@ -60,11 +55,15 @@ const scrapBlacked = (url) => {
 };
 
 (async function () {
+  /** @type {Array<string>} */
   const [a, b, url] = process.argv;
+
   if (!url) {
     console.log("No link!");
     return;
   }
+
+  /** @type { ScrappedDataType } */
   const result = await scrapBlacked(url);
   console.log(result);
 })();
