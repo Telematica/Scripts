@@ -17,7 +17,10 @@ const scrapBlacked = (url) => {
         return;
       }
       try {
+        /** @type { jsdom.JSDOM } */
         const dom = new jsdom.JSDOM(body);
+
+        /** @type { ScrappedDataType } */
         const data = {
           title: dom.window.document.querySelector(
             '[data-test-component="VideoTitle"]'

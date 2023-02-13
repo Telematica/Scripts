@@ -9,8 +9,8 @@
  * Scrapped Data
  * 
  * @typedef {{
- *  title: string,
- *  url: string,
- *  notes: Array<string>
+ *  title: ?string | undefined,
+ *  url: ?string | undefined,
+ *  notes: Array<?string | undefined>
  * }} ScrappedDataType
  */
