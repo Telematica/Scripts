@@ -6,6 +6,7 @@ const { HEADERS } = require("./common.constants");
 /** @type { ScrapperType } */
 const scrapBlacked = (url) => {
   return new Promise((resolve, reject) => {
+    /** @type {request.RequiredUriUrl & request.CoreOptions} */
     const options = {
       url,
       headers: HEADERS,
